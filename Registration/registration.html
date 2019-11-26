@@ -4,15 +4,16 @@
         <title>Robolympics 3.0</title>
         <link rel="stylesheet" href="style.css">
         <style>
-          @import url('https://fonts.googleapis.com/css?family=Alata|Alatsi|Fjalla+One&display=swap');
+         @import url('https://fonts.googleapis.com/css?family=Alata|Alatsi|Bitter|Fjalla+One&display=swap');
             </style>
     </head>
     <body>
-        <div class="container">
-            <div class="main">
+        <div id="container">
+            <div style="position: relative; top: -3rem;"> 
+            <div id="main">
                 <div id="floating">
                     <h3 id="wel"> Welcome <br> to  <br> Robolympics 3.0 🤖</h3>
-                    <p id="des"> Select if you are indvidual or you have a team to register.</p>
+                    <p id="des"> Select if you are one participant or you have a team to register.</p>
 
                 </div>
                 <div class="btns">
@@ -21,6 +22,119 @@
                     
                 </div>
             </div>
+            <div id="ind-form">
+                <form class="form1">
+                    <div class="form-control" id="name-form">
+                    <label>Name</label><br>
+                    <input name="name" type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="form-control" id="uni-form">
+                    <label>Universty</label><br>
+                    <select name="universty">
+                    <option>Ain Shams</option>
+                    <option>Cairo</option>
+                    <option>Helwan</option>
+                    <option>Alex</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-control" id="fa-form">
+                <label>Faculty</label><br>
+                <select name="faculty">
+                    <option>Engineering</option>
+                    <option>Computer Science</option>
+                    <option>Commerce</option>
+                    <option>Alsun</option>
+                    <option>Medicine</option>
+                    <option>Pharmacy </option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-control" id="year-form">
+                <label>Academic Year</label><br>
+                <select name="year">
+                    <option>Freshmen</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                </select>
+            </div>
+            <div class="form-control" id="dep-form">
+                <label>Department</label><br>
+                <select>
+                    <option>Freshmen</option>
+                    <option>Electrical</option>
+                    <option>Mechanical</option>
+                    <option>Civil</option>
+                    <option>Architecture</option>
+                </select>
+            </div>
+            <div class="form-control" id="phone-form">
+                <label>Phone</label><br>
+                <input name="phone" type="text" placeholder="Enter Phone">
+            </div>
+            <div class="form-control" id="e-form"> 
+                <label>E-mail</label><br>
+                <input name="email" type="text" placeholder="Enter e-mail">
+            </div>
+                </form>
+            </div>
+            <div id="btn1">
+                <h3>SUBMIT</h3>
+            </div>
+            <div id="back1">
+                <p>Back</p>
+            </div>
+            <div id="group-form">
+                <form id="form2">
+                    <div class="control-form2" id="tname-form">
+                        <label>Team Name</label><br>
+                        <input name="team name" type="text" placeholder="Team Name"><br>
+                    </div>
+                    <div class="control-form2" id="lead-form">
+                        <label> TeamLeader</label><br>
+                        <input name="lead name" type="text" placeholder="Leader Name"><br>
+                        <label style="display: inline-block;">E-mail</label><br>
+                        <input style="display: inline-block;" name="lead-mail" type="text" placeholder="E-mail"><br>
+                        <label>Phone</label><br>
+                        <input name="lead-phone" type="text" placeholder="Phone Number"><br>
+                    </div>
+                    <div class="control-form2" id="memb-form">
+                        <div id="first">
+                        <label>1st Member</label><br>
+                        <input name="name1" type="text" placeholder="Enter Name"><br>
+                        <label>Phone</label><br>
+                        <input name="phone1" type="text" placeholder="Phone Number"><br>
+                    </div>
+                    <div id="second">
+                        <label>2nd Member</label><br>
+                        <input name="name2" type="text" placeholder="Enter Name"><br>
+                        <label>Phone</label><br>
+                        <input name="phone2" type="text" placeholder="Phone Number"><br>
+                    </div>
+                    <div id="third">
+                        <label>3rd Member</label><br>
+                        <input name="name3" type="text" placeholder="Enter Name"><br>
+                        <label>Phone</label><br>
+                        <input name="phone3" type="text" placeholder="Phone Number"><br>
+                    </div>
+                    <div id="fourth">
+                        <label >4th Member</label><br>
+                        <input name="name4" type="text" placeholder="Enter Name"><br>
+                        <label>Phone</label><br>
+                        <input  name="phone4" type="text" placeholder="Phone Number"><br>
+                    </div>
+                    </div>
+                </form>
+            </div>
+            <div id="btn3">
+                <p>BACK</p>
+            </div>
+            <div id="btn4">
+                <h4>SUBMIT</h4>
+            </div>
+        </div>
         </div>
         <script src="design.js"></script>
     </body>
