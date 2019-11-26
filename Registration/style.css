@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 #container{
     margin: 0;
     padding: 0;
@@ -5,19 +8,28 @@
     background-size: cover;
     height: 100vh;
     position: relative;
-    top: -2rem;
+    top: -0.5rem;
+}
+#logo{
+    width: 6rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 #main{
+    box-shadow: 1rem 1rem 4rem #222831;
     background-color: #090057;
     text-align: center; 
     align-items: center; 
     position: relative;
-   top: 9rem;
+   top: 3rem;
    left: 14rem;
     width: 70rem;
     height: 35rem;
 }
 #floating{
+    background-image: linear-gradient(to right, rgba(39, 35, 67,0.5) , rgba(34, 40, 49,0.5) ,url(car1.jpg));
+    background-size: cover;
+    box-shadow: 1rem 1rem 4rem #222831;
     background-color: #f8f8f8;
     position: relative;
     left: 6rem;
@@ -59,6 +71,7 @@
     font-size: 1.25rem;
 }
 #wel{
+    color: black;
     margin-top: 1.25rem;
     margin-left: 1.5rem;
     font-size: 4rem;
@@ -66,6 +79,7 @@
     font-family: 'Alata', sans-serif;
 }
 #des{
+    color: black;
     font-family: 'Alatsi', sans-serif; 
     font-size: 1.75rem;
 }
@@ -101,7 +115,7 @@
     margin-left: 2rem;
     position: relative;
     left: 15rem;
-    top: -25rem;
+    top: -30rem;
     opacity: 0;
     width: 40rem;
 }
@@ -131,8 +145,8 @@ input{
 }
 #btn1{
     position: relative;
-    top: -30rem;
-    left: 41rem;
+    top: -37rem;
+    left: 42rem;
     background-color: #10316b;
     width: 8rem;
     color: white;
@@ -149,7 +163,7 @@ input{
 }
 #back1 {
 position: relative;
-top: -55rem;
+top: -63rem;
 left: 43rem;
 background-color: #10316b;
 width: 8rem;
@@ -167,7 +181,7 @@ background-color: #1a2e52;
 }
 #group-form{
     position: relative;
-    top: -100rem;
+    top: -105rem;
     left: 16rem;
     width: 40rem;
     opacity: 0;
@@ -218,7 +232,7 @@ background-color: #1a2e52;
 }
 #btn3{
     position: relative;
-    top: -162rem;
+    top: -165rem;
     left: 42rem;
     background-color: #10316b;
     width: 8rem;

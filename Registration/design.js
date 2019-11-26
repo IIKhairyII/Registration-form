@@ -9,6 +9,8 @@ var f2 = document.getElementById("group-form");
 var b3 = document.getElementById("btn3");
 var b4 = document.getElementById("btn4");
 var a = document.getElementById("container");
+var o1 = document.getElementById("other1");
+var o2 = document.getElementById("other2");
 m.addEventListener("click",function(){
     if(e= true){
         m.style.opacity=0;
@@ -28,10 +30,11 @@ m.addEventListener("click",function(){
         b2.style.opacity="100";
         b2.style.transition="0.3s all ease-out";
         b2.style.transitionDelay="1.8s";
-        f2.style.display="none";
+        f2.style.zIndex="-1";
         
     }
 })
+
 b2.addEventListener("click",function(){
     if(e= true){
         m.style.opacity=100;
@@ -68,10 +71,10 @@ g.addEventListener("click",function(){
         f1.style.opacity="0";
         b1.style.opacity="0";
         b2.style.opacity="0";
+        f2.style.zIndex="0";
         f2.style.opacity="100";
-        f2.style.display="block";
         f2.style.transition="all 0.3s ease-out";
-        f2.style.transitionDelay="1s"
+        f2.style.transitionDelay="1s";
         b3.style.opacity="100";
         b3.style.transition="0.3s all ease-out";
         b3.style.transitionDelay="1.8s";
