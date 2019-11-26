@@ -4,20 +4,21 @@ body{
 #container{
     margin: 0;
     padding: 0;
-    background-color: wheat;
-    background-size: cover;
+    background-image: linear-gradient( to right , rgba(39, 50, 56,0.98),rgba(196, 14, 37,0.98));
+    position: fixed;
+    background-size: 105rem;
     height: 100vh;
     position: relative;
     top: -0.5rem;
 }
 #logo{
-    width: 6rem;
+    width: 8rem;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 #main{
     box-shadow: 1rem 1rem 4rem #222831;
-    background-color: #090057;
+    background-color: #f6f6f6;
     text-align: center; 
     align-items: center; 
     position: relative;
@@ -27,10 +28,10 @@ body{
     height: 35rem;
 }
 #floating{
-    background-image: linear-gradient(to right, rgba(39, 35, 67,0.5) , rgba(34, 40, 49,0.5) ,url(car1.jpg));
+    background-image: linear-gradient(to right, rgba(39, 35, 67,0.5) , rgba(34, 40, 49,0.5) ,url());
     background-size: cover;
     box-shadow: 1rem 1rem 4rem #222831;
-    background-color: #f8f8f8;
+    background-color: rgba(39, 50, 56);
     position: relative;
     left: 6rem;
     height: 40rem;
@@ -47,7 +48,8 @@ body{
     to {transform: translateX(0rem);}
 }
 #indv{
-    background-color: #f8f8f8;
+    background-color: #702533;
+    color: white;
     width: 15%;
     cursor: pointer;
     border-radius: 3rem;
@@ -59,7 +61,8 @@ body{
     font-size: 1.25rem;
 }
 #group{
-    background-color: #f8f8f8;
+    background-color: #702533;
+    color: white;
     width: 15%;
     cursor: pointer;
     border-radius: 3rem;
@@ -71,15 +74,15 @@ body{
     font-size: 1.25rem;
 }
 #wel{
-    color: black;
+    color: white;
     margin-top: 1.25rem;
     margin-left: 1.5rem;
-    font-size: 4rem;
+    font-size: 2.25rem;
     text-align: left;
     font-family: 'Alata', sans-serif;
 }
 #des{
-    color: black;
+    color: white;
     font-family: 'Alatsi', sans-serif; 
     font-size: 1.75rem;
 }
@@ -120,7 +123,7 @@ body{
     width: 40rem;
 }
 label{
-    color: white;
+    color: rgba(39, 50, 56);
     font-size: 1.5rem;
     font-family: 'Alatsi', sans-serif;
 }
@@ -138,16 +141,16 @@ input{
     border: none;
     background: none;
     font-family: 'Alata', sans-serif;
-    color: white;
+    color: #043266;
     font-size: 1rem;
-    border-bottom: solid 0.1rem white;
+    border-bottom: solid 0.1rem #d3d4d8;
     width: 20rem;
 }
 #btn1{
     position: relative;
     top: -37rem;
     left: 42rem;
-    background-color: #10316b;
+    background-color: #702533;
     width: 8rem;
     color: white;
     text-align: center;
@@ -158,14 +161,11 @@ input{
     transition: all 0.3s ease-in;
     opacity: 0;
 }
-#btn1:hover{
-    background-color: #1a2e52;
-}
 #back1 {
 position: relative;
 top: -63rem;
 left: 43rem;
-background-color: #10316b;
+background-color: #702533;
 width: 8rem;
 color: white;
 text-align: center;
@@ -175,9 +175,6 @@ font-family: 'Fjalla One', sans-serif;
 cursor: pointer;
 transition: all 0.3s ease-in;
 opacity: 0;
-}
-#back1:hover{
-background-color: #1a2e52;
 }
 #group-form{
     position: relative;
@@ -190,7 +187,7 @@ background-color: #1a2e52;
 #lead-form{
     margin: 1rem;
     line-height: 2rem;
-    outline: solid 0.1rem #00909e;
+    outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -198,7 +195,7 @@ background-color: #1a2e52;
     margin: 1rem;
     line-height: 2rem;
     display: inline-block;
-    outline: solid 0.1rem #00909e;
+    outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -206,7 +203,7 @@ background-color: #1a2e52;
     margin: 1rem;
     display: inline-block;
     line-height: 2rem;
-    outline: solid 0.1rem #00909e;
+    outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -214,7 +211,7 @@ background-color: #1a2e52;
     margin: 1rem;
     line-height: 2rem;
     display: inline-block;
-    outline: solid 0.1rem #00909e;
+    outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -222,7 +219,7 @@ background-color: #1a2e52;
     margin: 1rem;
     line-height: 2rem;
     display: inline-block;
-    outline: solid 0.1rem #00909e;
+    outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -234,7 +231,7 @@ background-color: #1a2e52;
     position: relative;
     top: -165rem;
     left: 42rem;
-    background-color: #10316b;
+    background-color:  #702533;
     width: 8rem;
     color: white;
     text-align: center;
@@ -249,7 +246,7 @@ background-color: #1a2e52;
     position: relative;
     top: -110rem;
     left: 42rem;
-    background-color: #10316b;
+    background-color:  #702533;
     width: 8rem;
     color: white;
     text-align: center;

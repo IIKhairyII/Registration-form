@@ -11,8 +11,11 @@ var b4 = document.getElementById("btn4");
 var a = document.getElementById("container");
 var o1 = document.getElementById("other1");
 var o2 = document.getElementById("other2");
+var d = document.getElementById("des");
 m.addEventListener("click",function(){
     if(e= true){
+        m.style.cursor="default";
+        g.style.cursor="default";
         m.style.opacity=0;
         g.style.opacity=0;
         m.style.transition="0.3s all ease-out";
@@ -31,12 +34,14 @@ m.addEventListener("click",function(){
         b2.style.transition="0.3s all ease-out";
         b2.style.transitionDelay="1.8s";
         f2.style.zIndex="-1";
-        
+        d.innerHTML="Individual Registration";
     }
 })
 
 b2.addEventListener("click",function(){
     if(e= true){
+        m.style.cursor="pointer";
+        g.style.cursor="pointer";
         m.style.opacity=100;
         g.style.opacity=100;
         m.style.transition="0.3s all ease-out";
@@ -52,16 +57,18 @@ b2.addEventListener("click",function(){
         b1.style.transition="0.3s all ease-out";
         b2.style.opacity="0";
         b2.style.transition="0.3s all ease-out";
-      
+        d.innerHTML="Select if you are one participant or you have a team to register.";
     }
 })
 g.addEventListener("click",function(){
     if(e= true){
+        m.style.cursor="default";
+        g.style.cursor="default";
         m.style.opacity=0;
         g.style.opacity=0;
+        g.style.transition="0.3s all ease-out";
         m.style.transition="0.3s all ease-out";
         m.style.transitionDelay="0.2s";
-        g.style.transition="0.3s all ease-out";
         a.style.height="200vh";
         y.style.height="75rem";
         c.style.height="80rem";
@@ -81,10 +88,12 @@ g.addEventListener("click",function(){
         b4.style.opacity="100";
         b4.style.transition="0.3s all ease-out";
         b4.style.transitionDelay="1.8s";
-        
+        d.innerHTML="Team Registration";
     }
 })
 b3.addEventListener("click",function(){
+    m.style.cursor="pointer";
+    g.style.cursor="pointer";
     m.style.opacity=100;
     g.style.opacity=100;
     m.style.transition="0.3s all ease-out";
@@ -103,4 +112,5 @@ b3.addEventListener("click",function(){
     b3.style.transition="0.3s all ease-out";
     b4.style.opacity="0";
     b4.style.transition="0.3s all ease-out";
+    d.innerHTML="Select if you are one participant or you have a team to register.";
 })
