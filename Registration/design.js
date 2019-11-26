@@ -98,7 +98,7 @@ b3.addEventListener("click",function(){
     c.style.animationDelay = "0.3s";
     c.style.animationFillMode="backwards";
     f2.style.opacity="0";
-    f2.style.transition="0.1s all ease-out";
+    f2.style.transition="0s all ease-out";
     b3.style.opacity="0";
     b3.style.transition="0.3s all ease-out";
     b4.style.opacity="0";

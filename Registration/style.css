@@ -260,3 +260,8 @@ background-color: #1a2e52;
     transition: all 0.3s ease-in;
     opacity: 0;
 }
+@media screen and (min-width: 310px) and (max-width: 420px) {
+    body{
+        padding: 0;
+    }
+}
