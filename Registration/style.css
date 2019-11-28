@@ -281,6 +281,10 @@ opacity: 0;
         margin-left: -7rem;
         opacity: 100;
     }
+    @keyframes down {
+        from{ transform: translateY(0);}
+        to{ transform: translateY(10rem);}
+    }
     #main{
         width: 26rem;
         height: 50rem;
@@ -319,13 +323,13 @@ opacity: 0;
     }
     #btn1{
         position: relative;
-        top: 2rem;
-        left: 0rem;
+        top: -28rem;
+        left: 18rem;
     }
     #back1{
         position: relative;
-        top: 2rem;
-        left: 10rem; 
+        top: -66.5rem;
+        left: 30.5rem; 
     }
     #group-form{
         opacity: 00;
