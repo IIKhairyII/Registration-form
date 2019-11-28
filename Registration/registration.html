@@ -2,58 +2,61 @@
 <html>
     <head>
         <title>Robolympics 3.0</title>
+        <link href="https://fonts.googleapis.com/css?family=Alata|Alatsi|Bitter|Fjalla+One&display=swap">
         <link rel="stylesheet" href="style.css">
-        <style>
-         @import url('https://fonts.googleapis.com/css?family=Alata|Alatsi|Bitter|Fjalla+One&display=swap');
-            </style>
+
     </head>
     <body>
         <div id="container">
           <a href="#">  <img id="logo" src="Aviation-Club.png" ></a>
-            <div id="con1" style="position: relative; top: -3rem;"> 
+            <div id="con1"> 
             <div id="main">
                 <div id="floating">
-                    <h3 id="wel"> Welcome  to  <br><br><span class="rob" style="font-size: 3.5rem; margin-top: 2rem;"> Robolympics 3.0</span> </h3><br><br>
+                    <h3 id="wel"> Welcome  to  <br><br><span class="rob"> Robolympics 3.0</span> </h3><br><br>
                     <p id="des"> Select if you are one participant or you have a team to register.</p>
 
                 </div>
                 <div class="btns">
                     <p id="indv">Member Registration</p>
                     <p id="group"> Team Registration</p>
+                </div>
+                <div id="ind-form">
+                    <form class="form1">
+                        <div class="form-control" id="name-form">
+                            <label>Name</label><br>
+                            <input name="name" type="text" placeholder="Enter Name">
+                        </div>
+                        <div class="form-control" id="phone-form">
+                            <label>Phone Number</label><br>
+                            <input name="number" type="text" placeholder="Enter Phone">
+                        </div>
+                        <div class="form-control" id="e-form"> 
+                            <label>E-mail</label><br>
+                            <input name="email" type="text" placeholder="Enter e-mail">
+                        </div>
                     
-                </div>
-            </div>
-            <div id="ind-form">
-                <div class="form-control" id="name-form">
-                    <label>Name</label><br>
-                    <input name="name" type="text" placeholder="Enter Name">
-                </div>
-                <div class="form-control" id="phone-form">
-                    <label>Phone Number</label><br>
-                    <input name="number" type="text" placeholder="Enter Phone">
-                </div>
-                <div class="form-control" id="e-form"> 
-                    <label>E-mail</label><br>
-                    <input name="email" type="text" placeholder="Enter e-mail">
+                        <div class="form-control" id="dep-form">
+                            <label>Faculty & Department</label><br>
+                            <input name="faculty" type="text" placeholder="Enter Department">
+                        </div>
+                        <div class="form-control" id="dep-form">
+                            <label>Interview Time</label><br>
+                            <select name="time" id="time">
+                                
+                            </select>
+                        </div>
+                    </form>
+                    <div class="flex-1">
+                        <div id="back1">
+                            <p>Back</p>
+                        </div>
+                        <div id="btn1">
+                            <h3>SUBMIT</h3>
+                        </div>
+                        
+                    </div>
                 </div>
             
-                <div class="form-control" id="dep-form">
-                    <label>Faculty & Department</label><br>
-                    <input name="faculty" type="text" placeholder="Enter Department">
-                </div>
-                <div class="form-control" id="dep-form">
-                    <label>Interview Time</label><br>
-                    <select name="time" id="time">
-                        
-                    </select>
-                </div>
-            </div>
-            <div id="btn1">
-                <h3>SUBMIT</h3>
-            </div>
-            <div id="back1">
-                <p>Back</p>
-            </div>
             <div id="group-form">
                 <form id="form2">
                     <div class="control-form2" id="tname-form">
@@ -95,13 +98,17 @@
                     </div>
                     </div>
                 </form>
+                <div class="flex-1">
+                    <div id="btn3">
+                        <p>BACK</p>
+                    </div>
+                    <div id="btn4">
+                        <h4>SUBMIT</h4>
+                    </div>
+                </div>
             </div>
-            <div id="btn3">
-                <p>BACK</p>
-            </div>
-            <div id="btn4">
-                <h4>SUBMIT</h4>
-            </div>
+        </div>
+            
         </div>
         </div>
         <script src="design.js"></script>

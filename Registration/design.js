@@ -12,6 +12,7 @@ var a = document.getElementById("container");
 var o1 = document.getElementById("other1");
 var o2 = document.getElementById("other2");
 var d = document.getElementById("des");
+
 m.addEventListener("click",function(){
     if(e= true){
         m.style.cursor="default";
