@@ -257,8 +257,80 @@ opacity: 0;
     transition: all 0.3s ease-in;
     opacity: 0;
 }
-@media screen and (min-width: 310px) and (max-width: 420px) {
+@media screen and (min-width: 310px){
+    html{
+        font-size: 62.5%;
+    }
     body{
         padding: 0;
+    }
+    #logo{
+        width: 6rem;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    #con1{
+        width: 14rem;
+        margin-left: -12.5rem;
+    }
+    #floating{
+        position: relative;
+        top: 1.75rem;
+        height: 13rem;
+        width: 28rem;
+        margin-left: -7rem;
+        opacity: 100;
+    }
+    #main{
+        width: 26rem;
+        height: 50rem;
+    }
+    .rob{
+        font-size: -100%;
+    }
+    #wel{
+        font-size: 110%;
+        
+    }
+    #des{
+        font-size: 110%;
+        margin-top: -2rem;
+    }
+    #indv{
+        position: relative;
+        left: 6rem;
+        top: 8rem;
+        width: 11rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #group{
+        position: relative;
+        left: 6rem;
+        top: 9rem;
+        width: 11rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+    #ind-form{
+        position: relative;
+       margin-top: -15rem;
+       opacity: 0;
+    }
+    #btn1{
+        position: relative;
+        top: 2rem;
+        left: 0rem;
+    }
+    #back1{
+        position: relative;
+        top: 2rem;
+        left: 10rem; 
+    }
+    #group-form{
+        opacity: 00;
+        position: relative;
+        margin-top: 37rem;
+        left: 14.8rem;
     }
 }

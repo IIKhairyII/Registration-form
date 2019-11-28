@@ -33,6 +33,7 @@ m.addEventListener("click",function(){
         b2.style.opacity="100";
         b2.style.transition="0.3s all ease-out";
         b2.style.transitionDelay="1.8s";
+        b2.style.cursor="pointer";
         f2.style.zIndex="-1";
         d.innerHTML="Individual Registration";
     }
@@ -57,6 +58,7 @@ b2.addEventListener("click",function(){
         b1.style.transition="0.3s all ease-out";
         b2.style.opacity="0";
         b2.style.transition="0.3s all ease-out";
+        b2.style.cursor="default";
         d.innerHTML="Select if you are one participant or you have a team to register.";
     }
 })
