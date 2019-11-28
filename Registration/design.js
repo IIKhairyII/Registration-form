@@ -12,7 +12,8 @@ var a = document.getElementById("container");
 var o1 = document.getElementById("other1");
 var o2 = document.getElementById("other2");
 var d = document.getElementById("des");
-
+var mem_add =  document.getElementById("add");
+var i = 5;
 m.addEventListener("click",function(){
     if(e= true){
         m.style.cursor="default";
@@ -116,4 +117,14 @@ b3.addEventListener("click",function(){
     b4.style.opacity="0";
     b4.style.transition="0.3s all ease-out";
     d.innerHTML="Select if you are one participant or you have a team to register.";
-})
+});
+
+
+mem_add.addEventListener("click", function(){
+
+    var div = document.createElement("div");
+    div.classList = "form-group";
+    div.innerHTML = "<label >"+i+"th Member</label><br>  <input name=\"name"+i+"\" type=\"text\" placeholder=\"Enter Name\"><br><label>Phone</label><br><input  name=\"phone"+i+"\" type=\"text\" placeholder=\"Phone Number\"><br>";
+    f2.appendChild(div);
+    i = i+1;
+});

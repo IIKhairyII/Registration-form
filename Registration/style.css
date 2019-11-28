@@ -18,28 +18,29 @@
 }
 #main{
     box-shadow: 1rem 1rem 4rem #222831;
-    background-color: #f6f6f6;
+    background-color: rgba(246,246,246,0.5);
     text-align: center; 
     align-items: center; 
     position: absolute;
    	top: 50%;
    	left: 50%;
    	transform: translate(-50%,-50%);
-    width: 70rem;
-    height: 35rem;
+    width: 75%;
+    height: 77%;
     display: flex;
-    justify-content: space-around; 	
-    opacity: 0.5;
+    justify-content: space-around; 
+    flex-shrink: 1;	
+
 }
 .rob{
         font-size: 3.5rem;
     }
 #floating{
-    background-image: linear-gradient(to right, rgba(39, 35, 67,0.5) , rgba(34, 40, 49,0.5) ,url());
+
     background-size: cover;
     box-shadow: 1rem 1rem 4rem #222831;
-    background-color: rgba(39, 50, 56);
-    height: 40rem;
+    background-color: rgba(39, 50, 56,0.85);
+    height: 110%;
     width: 27rem;
 }
 @keyframes float{
@@ -115,6 +116,7 @@
 }
 #ind-form{
     position: absolute;
+    left: 2.5rem;
     opacity: 0;
     width: 40rem;
     display: flex;
@@ -140,7 +142,7 @@ input{
     font-family: 'Alata', sans-serif;
     color: #043266;
     font-size: 1rem;
-    border-bottom: solid 0.1rem #d3d4d8;
+    border-bottom: solid 0.1rem rgba(211,212,216,0.5);
     width: 20rem;
 }
 .flex-1{
@@ -149,36 +151,27 @@ input{
 	justify-content: space-between;
 	flex-direction: column;
 }
-#btn1{
+.btn{
     background-color: #702533;
     width: 8rem;
     color: white;
     text-align: center;
-    padding: 0.1rem;
+    padding: 1rem 0.1rem;
     font-size: 1rem;
     font-family: 'Fjalla One', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease-in;
     opacity: 0;
 }
-#back1 {
-	background-color: #702533;
-	width: 8rem;
-	color: white;
-	text-align: center;
-	padding: 0.1rem;
-	font-size: 1rem;
-	font-family: 'Fjalla One', sans-serif;
-	cursor: pointer;
-	transition: all 0.3s ease-in;
-	opacity: 0;
-	margin-left: 1rem;
+.form1{
+	text-align: left;
 }
 #group-form{
 	position: absolute;
     width: 40rem;
     opacity: 0;
     display: flex;
+    left: 3.5rem;
 }
 #lead-form{
     margin: 1rem;
@@ -187,7 +180,7 @@ input{
     outline-offset: 0.5rem;
     width: 20rem;
 }
-#first{
+.form-group{
     margin: 1rem;
     line-height: 2rem;
     display: inline-block;
@@ -195,138 +188,41 @@ input{
     outline-offset: 0.5rem;
     width: 20rem;
 }
-#second{
-    margin: 1rem;
-    display: inline-block;
-    line-height: 2rem;
-    outline: solid 0.1rem #d3d4d8;
-    outline-offset: 0.5rem;
-    width: 20rem;
-}
-#third{
-    margin: 1rem;
-    line-height: 2rem;
-    display: inline-block;
-    outline: solid 0.1rem #d3d4d8;
-    outline-offset: 0.5rem;
-    width: 20rem;
-}
-#fourth{
-    margin: 1rem;
-    line-height: 2rem;
-    display: inline-block;
-    outline: solid 0.1rem #d3d4d8;
-    outline-offset: 0.5rem;
-    width: 20rem;
-}
+
 #tname-form{
     margin: 1rem;
     line-height: 2rem;
 }
-#btn3{
 
-    background-color:  #702533;
-    width: 8rem;
-    color: white;
-    text-align: center;
-    padding: 0.1rem;
-    font-size: 1rem;
-    font-family: 'Fjalla One', sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    opacity: 0;
+@media screen and (max-width: 900px){
+    html{
+        font-size: 75%;
+    }
 }
-#btn4{
-
-    background-color:  #702533;
-    width: 8rem;
-    color: white;
-    text-align: center;
-    padding: 0.1rem;
-    font-size: 1rem;
-    font-family: 'Fjalla One', sans-serif;
-    cursor: pointer;
-    transition: all 0.3s ease-in;
-    opacity: 0;
-}
-@media screen and (max-width: 310px){
+@media screen and (max-width: 600px){
     html{
         font-size: 62.5%;
     }
-    body{
-        padding: 0;
-    }
-    #logo{
-        width: 6rem;
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
-    }
-    #con1{
-        width: 14rem;
-        margin-left: -12.5rem;
-    }
-    #floating{
-        position: relative;
-        top: 1.75rem;
-        height: 13rem;
-        width: 28rem;
-        margin-left: -7rem;
-        opacity: 100;
-    }
-    @keyframes down {
-        from{ transform: translateY(0);}
-        to{ transform: translateY(10rem);}
-    }
-    #main{
-        width: 26rem;
-        height: 50rem;
-    }
-    .rob{
-        font-size: 3.5rem;
-    }
-    #wel{
-        font-size: 110%;
-        
-    }
-    #des{
-        font-size: 110%;
-        margin-top: -2rem;
-    }
-    #indv{
-        position: relative;
-        left: 6rem;
-        top: 8rem;
-        width: 11rem;
-        cursor: pointer;
-        z-index: 2;
-    }
-    #group{
-        position: relative;
-        left: 6rem;
-        top: 9rem;
-        width: 11rem;
-        cursor: pointer;
-        z-index: 2;
-    }
-    #ind-form{
-        position: relative;
-       margin-top: -15rem;
-       opacity: 0;
-    }
-    #btn1{
-        position: relative;
-        top: -28rem;
-        left: 18rem;
-    }
-    #back1{
-        position: relative;
-        top: -66.5rem;
-        left: 30.5rem; 
-    }
-    #group-form{
-        opacity: 00;
-        position: relative;
-        margin-top: 37rem;
-        left: 14.8rem;
-    }
+	#main{
+		flex-direction: column;
+	}
+	#indv{
+		display: inline-block;
+	}
+	#group{
+		display: inline-block;
+	}
+	#ind-form{
+		flex-direction: column;
+	}
+	.flex-1{
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	#back1,#btn3{
+		margin-right: 1rem;
+	}
+	#group-form{
+		flex-direction: column;
+	}
 }
