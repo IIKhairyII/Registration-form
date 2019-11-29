@@ -4,6 +4,7 @@ var c = document.getElementById("floating");
 var f1 = document.getElementById("ind-form");
 var b1 = document.getElementById("btn1");
 var b2 = document.getElementById("back1");
+var click = false;
 var y = document.getElementById("main");
 var f2 = document.getElementById("group-form");
 var b3 = document.getElementById("btn3");
@@ -18,7 +19,8 @@ var form1 = document.getElementById("form1");
 var form2 = document.getElementById("form2");
 var i = 5;
 m.addEventListener("click",function(){
-    if(e= true){
+
+    if(!click){
         m.style.cursor="default";
         g.style.cursor="default";
         m.style.opacity=0;
@@ -29,8 +31,18 @@ m.addEventListener("click",function(){
         c.style.animation = "float 2s";
         c.style.animationDelay = "0.3s";
         c.style.animationFillMode="forwards";
-        f1.style.opacity="100";
-        f1.style.transition="0.3s all ease-out";
+        if (window.innerWidth <= 600) {
+            setTimeout(function() {
+                c.style.opacity=0;}, 2000);
+        }
+
+        setTimeout(function() {
+            f1.style.opacity="1";
+            m.style.display="none";
+            g.style.display="none";
+            }, 500);
+        
+        f1.style.transition="0.5s all ease-out";
         f1.style.transitionDelay="0.9s";
         b1.style.opacity="100";
         b1.style.transition="0.3s all ease-out";
@@ -41,15 +53,25 @@ m.addEventListener("click",function(){
         b2.style.cursor="pointer";
         f2.style.zIndex="-1";
         d.innerHTML="Individual Registration";
+
+        f1.style.display = "flex";
+        click = true
     }
 })
 
 b2.addEventListener("click",function(){
     if(e= true){
+        c.style.opacity=1;
         m.style.cursor="pointer";
         g.style.cursor="pointer";
-        m.style.opacity=100;
-        g.style.opacity=100;
+        if (window.innerWidth <= 600) {
+            m.style.display="inline-block";
+            g.style.display="inline-block";
+        }
+        else{
+            m.style.display="block";
+            g.style.display="block";
+        }
         m.style.transition="0.3s all ease-out";
         g.style.transition="0.3s all ease-out";
         m.style.transitionDelay="1.6s";
@@ -65,10 +87,17 @@ b2.addEventListener("click",function(){
         b2.style.transition="0.3s all ease-out";
         b2.style.cursor="default";
         d.innerHTML="Select if you are one participant or you have a team to register.";
+        setTimeout(function() {
+            f1.style.display = "none";
+            m.style.opacity=1;
+            g.style.opacity=1;
+            }, 500);
+        
+        click = false
     }
 })
 g.addEventListener("click",function(){
-    if(e= true){
+    if(!click){
         m.style.cursor="default";
         g.style.cursor="default";
         m.style.opacity=0;
@@ -78,7 +107,12 @@ g.addEventListener("click",function(){
         m.style.transition="0.3s all ease-out";
         m.style.transitionDelay="0.2s";
         a.style.height="200vh";
-        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"43-01-01.png\")";
+        if (window.innerWidth <= 600) {
+            a.style.backgroundImage = "linear-gradient( to right bottom , rgba(255, 255, 255,0.7),rgba(225, 176, 111,0.7)),url(\"Untitled-2-01.png\")";
+        }
+        else{
+            a.style.backgroundImage = "linear-gradient( to right bottom , rgba(255, 255, 255,0.7),rgba(225, 176, 111,0.7)),url(\"43-01-01.png\")";
+        }
         y.style.height="75rem";
         c.style.height="80rem";
         c.style.animation = "float 2s";
@@ -88,8 +122,17 @@ g.addEventListener("click",function(){
         b1.style.opacity="0";
         b2.style.opacity="0";
         f2.style.zIndex="0";
-        f2.style.opacity="100";
-        f2.style.transition="all 0.3s ease-out";
+        if (window.innerWidth <= 600) {
+           setTimeout(function() {
+                c.style.opacity=0;}, 2000);
+        }
+        setTimeout(function() {
+            f2.style.opacity="1";
+            m.style.display="none";
+            g.style.display="none";
+            }, 500);
+        
+        f2.style.transition="all 0.5s ease-out";
         f2.style.transitionDelay="1s";
         b3.style.opacity="100";
         b3.style.transition="0.3s all ease-out";
@@ -98,13 +141,14 @@ g.addEventListener("click",function(){
         b4.style.transition="0.3s all ease-out";
         b4.style.transitionDelay="1.8s";
         d.innerHTML="Team Registration";
+        f2.style.display = "flex";
+        click = true;
     }
 })
 b3.addEventListener("click",function(){
+    c.style.opacity=1;
     m.style.cursor="pointer";
     g.style.cursor="pointer";
-    m.style.opacity=100;
-    g.style.opacity=100;
     a.style.transition="all 0.2s ease-out";
     m.style.transition="all 0.3s ease-out";
     g.style.transition="all 0.3s ease-out";
@@ -112,11 +156,14 @@ b3.addEventListener("click",function(){
     g.style.transitionDelay="1.6s";
     console.log(window.innerWidth);
     if (window.innerWidth <= 600) {
-        console.log(window.innerWidth);
-        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"Untitled-2-01.png\")";
+        m.style.display="inline-block";
+        g.style.display="inline-block";
+        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(255, 255, 255,0.7),rgba(225, 176, 111,0.7)),url(\"Untitled-2-01.png\")";
     }
     else{
-        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"11-01-01.png\")";
+        m.style.display="block";
+        g.style.display="block";
+        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(255, 255, 255,0.7),rgba(225, 176, 111,0.7)),url(\"11-01-01.png\")";
     }
     a.style.height="100vh";
     y.style.height="35rem";
@@ -131,13 +178,22 @@ b3.addEventListener("click",function(){
     b4.style.opacity="0";
     b4.style.transition="all 0.3s ease-out";
     d.innerHTML="Select if you are one participant or you have a team to register.";
+    setTimeout(function() {
+            f2.style.display = "none";
+            m.style.opacity=1;
+            g.style.opacity=1;
+
+            }, 500);
+    
+    click = false;
 });
 
 
 mem_add.addEventListener("click", function(){
     if (i == 8) { return;}
+    if(i==7){document.getElementById('dep-form2').style.display="none";}
+    
     var div = document.createElement("div");
-
     div.classList = "form-group";
     div.innerHTML = "<label >"+i+"th Member</label><br>  <input name=\"name"+i+"\" type=\"text\" placeholder=\"Enter Name\"><br><label>Phone</label><br><input  name=\"phone"+i+"\" type=\"text\" placeholder=\"Phone Number\"><br>";
     form.appendChild(div);

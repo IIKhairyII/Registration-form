@@ -1,14 +1,25 @@
+@font-face {
+    font-family: 'Gelio Retsina';
+    src: url('GelioRetsina.eot');
+    src: local('Gelio Retsina'), local('GelioRetsina'),
+        url('GelioRetsina.eot?#iefix') format('embedded-opentype'),
+        url('GelioRetsina.woff') format('woff'),
+        url('GelioRetsina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
 	padding: 0;
 	margin: 0;
 }
 body{
 	overflow-x: hidden;
+    font-family: 'Gelio Retsina',sanserif;
 }
 #container{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url("11-01-01.png");
+    background-image: linear-gradient( to right bottom , rgba(254, 255, 255,0.7),rgba(225, 176, 111,0.7)),url("11-01-01.png");
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -36,7 +47,7 @@ body{
 
 }
 .rob{
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 #floating{
 
@@ -63,8 +74,8 @@ body{
     cursor: pointer;
     border-radius: 3rem;
     padding: 1rem;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.25rem;
+    
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 #group{
@@ -73,8 +84,8 @@ body{
     cursor: pointer;
     border-radius: 3rem;
     padding: 1rem;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.25rem;
+    
+    font-size: 2rem;
 }
 #wel{
     color: white;
@@ -82,11 +93,11 @@ body{
     margin-left: 1.5rem;
     font-size: 2.25rem;
     text-align: left;
-    font-family: 'Alata', sans-serif;
+    
 }
 #des{
     color: white;
-    font-family: 'Alatsi', sans-serif; 
+     
     font-size: 1.75rem;
 }
 #name-form{
@@ -109,6 +120,7 @@ body{
     line-height: 1.75rem;
     margin-bottom: 0.8rem;
 }
+
 #fa-form{
     line-height: 1.75rem;
     margin-bottom: 0.8rem;
@@ -123,18 +135,19 @@ body{
     opacity: 0;
     width: 40rem;
     display: flex;
+    display: none;
 }
 label{
     color: rgba(39, 50, 56);
     font-size: 1.5rem;
-    font-family: 'Alatsi', sans-serif;
+    
 }
 select{
     border: none;
     background: none;
-    font-family: 'Alata', sans-serif;
+    
     font-size: 1rem;
-    color: white;
+    color:#191615;
     background-color: rgba(211,212,216,0.5);
     width: 20rem;
     cursor: pointer;
@@ -142,11 +155,14 @@ select{
 input{
     border: none;
     background: none;
-    font-family: 'Alata', sans-serif;
-    color: rgba(211,212,216,0.9);
+    color:#191615;
     font-size: 1rem;
     border-bottom: solid 0.1rem rgba(157, 157, 160, 0.5);
     width: 20rem;
+}
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
 }
 .flex-1{
 	display: flex;
@@ -161,7 +177,7 @@ input{
     text-align: center;
     padding: 1rem 0.1rem;
     font-size: 1rem;
-    font-family: 'Fjalla One', sans-serif;
+    
     cursor: pointer;
     transition: all 0.3s ease-in;
     opacity: 0;
@@ -176,11 +192,12 @@ input{
     display: flex;
     left: 2.5rem;
     top: 1rem;
+    display: none;
 }
 #lead-form{
     margin: 1rem;
     line-height: 2rem;
-    outline: solid 0.1rem #d3d4d8;
+    outline: solid 0.1rem #A7B8D7;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -188,7 +205,7 @@ input{
     margin: 1rem;
     line-height: 2rem;
     display: inline-block;
-    outline: solid 0.1rem #d3d4d8;
+    outline: solid 0.1rem #A7B8D7;
     outline-offset: 0.5rem;
     width: 20rem;
 }
@@ -205,7 +222,7 @@ input{
     text-transform: capitalize;
     width: 10%;
     cursor: pointer;
-    font-family: 'Fjalla One', sans-serif;
+    
     color: white;
     text-align: center;
     margin-top: 1.5rem;
@@ -222,7 +239,7 @@ input{
     }
     #container{
         background-image: none;
-        background-image: linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url("Untitled-2-01.png");
+        background-image: linear-gradient( to right bottom , rgba(254, 255, 255,0.7),rgba(225, 176, 111,0.7)),url("Untitled-2-01.png");
         background-size: cover;
     }
     @keyframes moveaway {
@@ -237,10 +254,10 @@ input{
 		flex-direction: column;
 	}
 	#indv{
-		display: inline-block;
+		display: inline-block ;
 	}
 	#group{
-		display: inline-block;
+		display: inline-block ;
 	}
 	#ind-form{
 		flex-direction: column;
