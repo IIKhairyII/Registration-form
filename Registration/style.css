@@ -29,7 +29,7 @@
     height: 77%;
     display: flex;
     justify-content: space-around; 
-    flex-shrink: 1;	
+
 
 }
 .rob{
@@ -172,6 +172,7 @@ input{
     opacity: 0;
     display: flex;
     left: 2.5rem;
+    top: 1rem;
 }
 #lead-form{
     margin: 1rem;

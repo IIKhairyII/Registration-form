@@ -13,6 +13,9 @@ var o1 = document.getElementById("other1");
 var o2 = document.getElementById("other2");
 var d = document.getElementById("des");
 var mem_add =  document.getElementById("add");
+var form = document.getElementById("memb-form");
+var form1 = document.getElementById("form1");
+var form2 = document.getElementById("form2");
 var i = 5;
 m.addEventListener("click",function(){
     if(e= true){
@@ -123,10 +126,16 @@ b3.addEventListener("click",function(){
 
 
 mem_add.addEventListener("click", function(){
-
+    if (i == 8) { return;}
     var div = document.createElement("div");
+
     div.classList = "form-group";
     div.innerHTML = "<label >"+i+"th Member</label><br>  <input name=\"name"+i+"\" type=\"text\" placeholder=\"Enter Name\"><br><label>Phone</label><br><input  name=\"phone"+i+"\" type=\"text\" placeholder=\"Phone Number\"><br>";
-    f2.appendChild(div);
+    form.appendChild(div);
+    y.style.height= 75+(i-4)*8 + "rem";
+    a.style.height=  200 +(i-4)*8 +"vh";
     i = i+1;
 });
+b1.onclick = ()=>{form1.submit();};
+
+b4.onclick = ()=>{form2.submit();};
