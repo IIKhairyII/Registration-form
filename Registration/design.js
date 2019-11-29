@@ -141,7 +141,12 @@ mem_add.addEventListener("click", function(){
     div.classList = "form-group";
     div.innerHTML = "<label >"+i+"th Member</label><br>  <input name=\"name"+i+"\" type=\"text\" placeholder=\"Enter Name\"><br><label>Phone</label><br><input  name=\"phone"+i+"\" type=\"text\" placeholder=\"Phone Number\"><br>";
     form.appendChild(div);
-    y.style.height= 75+(i-4)*8 + "rem";
+    if (window.innerWidth <= 600) {
+        y.style.height= 75+(i-4)*10 + "rem";
+    }
+    else {
+        y.style.height= 75+(i-4)*9 + "rem";
+    }
     a.style.height=  200 +(i-4)*8 +"vh";
     i = i+1;
 });

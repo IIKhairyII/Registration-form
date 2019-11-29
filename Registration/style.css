@@ -2,6 +2,9 @@
 	padding: 0;
 	margin: 0;
 }
+body{
+	overflow-x: hidden;
+}
 #container{
     margin: 0;
     padding: 0;
@@ -187,7 +190,7 @@ input{
     display: inline-block;
     outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
-    width: 72%;
+    width: 20rem;
 }
 
 #tname-form{
@@ -243,6 +246,7 @@ input{
 		flex-direction: column;
 	}
 	.flex-1{
+		margin-top: 1rem;
 		flex-direction: row;
 		justify-content: flex-start;
 	}
