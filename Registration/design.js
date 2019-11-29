@@ -78,6 +78,7 @@ g.addEventListener("click",function(){
         m.style.transition="0.3s all ease-out";
         m.style.transitionDelay="0.2s";
         a.style.height="200vh";
+        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"43-01-01.png\")";
         y.style.height="75rem";
         c.style.height="80rem";
         c.style.animation = "float 2s";
@@ -105,10 +106,18 @@ b3.addEventListener("click",function(){
     m.style.opacity=100;
     g.style.opacity=100;
     a.style.transition="all 0.2s ease-out";
-    m.style.transition="0.3s all ease-out";
-    g.style.transition="0.3s all ease-out";
+    m.style.transition="all 0.3s ease-out";
+    g.style.transition="all 0.3s ease-out";
     m.style.transitionDelay="1.6s";
     g.style.transitionDelay="1.6s";
+    console.log(window.innerWidth);
+    if (window.innerWidth <= 600) {
+        console.log(window.innerWidth);
+        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"Untitled-2-01.png\")";
+    }
+    else{
+        a.style.backgroundImage = "linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(\"11-01-01.png\")";
+    }
     a.style.height="100vh";
     y.style.height="35rem";
     c.style.height="40rem";
@@ -116,11 +125,11 @@ b3.addEventListener("click",function(){
     c.style.animationDelay = "0.3s";
     c.style.animationFillMode="backwards";
     f2.style.opacity="0";
-    f2.style.transition="0s all ease-out";
+    f2.style.transition="all 0s ease-out";
     b3.style.opacity="0";
-    b3.style.transition="0.3s all ease-out";
+    b3.style.transition="all 0.3s ease-out";
     b4.style.opacity="0";
-    b4.style.transition="0.3s all ease-out";
+    b4.style.transition="all 0.3s ease-out";
     d.innerHTML="Select if you are one participant or you have a team to register.";
 });
 

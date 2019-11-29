@@ -217,9 +217,9 @@ input{
     html{
         font-size: 62.5%;
     }
-    body{
+    #container{
         background-image: none;
-        background-image: linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(0-600.png);
+        background-image: linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url("Untitled-2-01.png");
         background-size: cover;
     }
     @keyframes moveaway {
