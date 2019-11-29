@@ -70,6 +70,7 @@ g.addEventListener("click",function(){
         g.style.cursor="default";
         m.style.opacity=0;
         g.style.opacity=0;
+        a.style.transition="all 0.2s ease-out";
         g.style.transition="0.3s all ease-out";
         m.style.transition="0.3s all ease-out";
         m.style.transitionDelay="0.2s";
@@ -100,6 +101,7 @@ b3.addEventListener("click",function(){
     g.style.cursor="pointer";
     m.style.opacity=100;
     g.style.opacity=100;
+    a.style.transition="all 0.2s ease-out";
     m.style.transition="0.3s all ease-out";
     g.style.transition="0.3s all ease-out";
     m.style.transitionDelay="1.6s";

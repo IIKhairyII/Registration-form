@@ -25,7 +25,7 @@
    	top: 50%;
    	left: 50%;
    	transform: translate(-50%,-50%);
-    width: 75%;
+    width: 85%;
     height: 77%;
     display: flex;
     justify-content: space-around; 
@@ -132,7 +132,7 @@ select{
     font-family: 'Alata', sans-serif;
     font-size: 1rem;
     color: white;
-    background-color: #1b2a49;
+    background-color: rgba(211,212,216,0.5);
     width: 20rem;
     cursor: pointer;
 }
@@ -140,9 +140,9 @@ input{
     border: none;
     background: none;
     font-family: 'Alata', sans-serif;
-    color: #043266;
+    color: rgba(211,212,216,0.9);
     font-size: 1rem;
-    border-bottom: solid 0.1rem rgba(211,212,216,0.5);
+    border-bottom: solid 0.1rem rgba(157, 157, 160, 0.5);
     width: 20rem;
 }
 .flex-1{
@@ -152,7 +152,7 @@ input{
 	flex-direction: column;
 }
 .btn{
-    background-color: #702533;
+    background-color: rgba(112, 37, 51,0.8);
     width: 8rem;
     color: white;
     text-align: center;
@@ -171,7 +171,7 @@ input{
     width: 40rem;
     opacity: 0;
     display: flex;
-    left: 3.5rem;
+    left: 2.5rem;
 }
 #lead-form{
     margin: 1rem;
@@ -186,12 +186,25 @@ input{
     display: inline-block;
     outline: solid 0.1rem #d3d4d8;
     outline-offset: 0.5rem;
-    width: 20rem;
+    width: 72%;
 }
 
 #tname-form{
     margin: 1rem;
     line-height: 2rem;
+}
+#add{
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(112, 37, 51,0.8);
+    text-transform: capitalize;
+    width: 10%;
+    cursor: pointer;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 @media screen and (max-width: 900px){
@@ -202,6 +215,19 @@ input{
 @media screen and (max-width: 600px){
     html{
         font-size: 62.5%;
+    }
+    body{
+        background-image: none;
+        background-image: linear-gradient( to right bottom , rgba(39, 50, 56,0.7),rgba(196, 14, 37,0.7)),url(0-600.png);
+        background-size: cover;
+    }
+    @keyframes moveaway {
+        from{ transform: translate(0);}
+        to{ transform: translateX(50rem);}
+    }
+    @keyframes moveback {
+        from{ transform: translate(50);}
+        to{ transform: translateX(0rem);}
     }
 	#main{
 		flex-direction: column;
